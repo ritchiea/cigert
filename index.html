@@ -1,11 +1,129 @@
 <!doctype html>
 <html>
 <head>
+
+  <style type="text/css">
+    .mobile {
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    .desktop {
+      display: none;
+    }
+
+    #slides {
+      display: none;
+    }
+
+    @media (min-width: 1000px) {
+      .mobile {
+        display: none;
+      }
+
+      .desktop {
+        display: block;
+        width: 960px;
+        margin: 0 auto;
+      }
+    }
+  </style>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="/js/jquery.slides.min.js"></script>
+  <script>
+    $(function () {
+      var width = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+      if (width >= 1000) {
+         $(".mobile").remove();
+         $(".desktop #slides").slidesjs({
+          width: 960,
+          height: 960,
+          pagination: {
+            active: false
+          }
+        });
+      } else {
+        $(".desktop").remove();
+        $(".mobile #slides").slidesjs({
+          width: 500,
+          height: 500,
+          pagination: {
+            active: false
+          }
+        });
+       }
+    });
+  </script>
 </head>
 
 <body>
 
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <div class="mobile">
+    <div id="slides">
+      <img src="http://andrewritchie.info/cigert/CIGERT%20PANEL%201.jpg">
+      <img src="http://andrewritchie.info/cigert/CIGERT%20PANEL%202.jpg">
+      <img src="http://andrewritchie.info/cigert/CIGERT%20PANEL%203.jpg">
+      <img src="http://andrewritchie.info/cigert/CIGERT%20PANEL%204.jpg">
+      <img src="http://andrewritchie.info/cigert/CIGERT%20PANEL%205.jpg">
+      <img src="http://andrewritchie.info/cigert/CIGERT%20PANEL%206.jpg">
+      <img src="http://andrewritchie.info/cigert/CIGERT%20PANEL%207a.jpg">
+      <img src="http://andrewritchie.info/cigert/CIGERT%20PANEL%208.jpg">
+      <img src="http://andrewritchie.info/cigert/CIGERT%20PANEL%209.jpg">
+      <img src="http://andrewritchie.info/cigert/CIGERT%20PANEL%2010.jpg">
+      <img src="http://andrewritchie.info/cigert/CIGERT%20PANEL%2011.jpg">
+      <img src="http://andrewritchie.info/cigert/CIGERT%20PANEL%2012.jpg">
+      <img src="http://andrewritchie.info/cigert/CIGERT%20PANEL%2013.jpg">
+      <img src="http://andrewritchie.info/cigert/CIGERT%20PANEL%2014.jpg">
+      <img src="http://andrewritchie.info/cigert/CIGERT%20PANEL%2015.jpg">
+      <img src="http://andrewritchie.info/cigert/CIGERT%20PANEL%2016.jpg">
+      <img src="http://andrewritchie.info/cigert/CIGERT%20PANEL%2017.jpg">
+      <img src="http://andrewritchie.info/cigert/CIGERT%20PANEL%2018.jpg">
+      <img src="http://andrewritchie.info/cigert/CIGERT%20PANEL%2019.jpg">
+      <img src="http://andrewritchie.info/cigert/CIGERT%20PANEL%2020.jpg">
+      <img src="http://andrewritchie.info/cigert/CIGERT%20PANEL%2021.jpg">
+      <img src="http://andrewritchie.info/cigert/CIGERT%20PANEL%2022.jpg">
+      <img src="http://andrewritchie.info/cigert/CIGERT%20PANEL%2023.jpg">
+      <img src="http://andrewritchie.info/cigert/CIGERT%20PANEL%2024.jpg">
+      <img src="http://andrewritchie.info/cigert/CIGERT%20PANEL%2025.jpg">
+      <img src="http://andrewritchie.info/cigert/CIGERT%20PANEL%2026.jpg">
+      <img src="http://andrewritchie.info/cigert/CIGERT%20PANEL%2027.jpg">
+      <img src="http://andrewritchie.info/cigert/CIGERT%20PANEL%2028.jpg">
+      <img src="http://andrewritchie.info/cigert/CIGERT%20PANEL%2029.jpg">
+      <img src="http://andrewritchie.info/cigert/CIGERT%20PANEL%2030.jpg">
+      <img src="http://andrewritchie.info/cigert/CIGERT%20PANEL%2031.jpg">
+      <img src="http://andrewritchie.info/cigert/CIGERT%20PANEL%2032.jpg">
+      <img src="http://andrewritchie.info/cigert/CIGERT%20PANEL%2033.jpg">
+      <img src="http://andrewritchie.info/cigert/CIGERT%20PANEL%2034.jpg">
+      <img src="http://andrewritchie.info/cigert/CIGERT%20PANEL%2035.jpg">
+      <img src="http://andrewritchie.info/cigert/CIGERT%20PANEL%206.jpg">
+      <img src="http://andrewritchie.info/cigert/CIGERT%20PANEL%206.jpg">
+      <img src="http://andrewritchie.info/cigert/CIGERT%20PANEL%206.jpg">
+      <img src="http://andrewritchie.info/cigert/CIGERT%20PANEL%206.jpg">
+      <img src="http://andrewritchie.info/cigert/CIGERT%20PANEL%206.jpg">
+      <img src="http://andrewritchie.info/cigert/CIGERT%20PANEL%206.jpg">
+      <img src="http://andrewritchie.info/cigert/CIGERT%20PANEL%206.jpg">
+      <img src="http://andrewritchie.info/cigert/CIGERT%20PANEL%206.jpg">
+      <img src="http://andrewritchie.info/cigert/CIGERT%20PANEL%206.jpg">
+      <img src="http://andrewritchie.info/cigert/CIGERT%20PANEL%206.jpg">
+      <img src="http://andrewritchie.info/cigert/CIGERT%20PANEL%206.jpg">
+      <img src="http://andrewritchie.info/cigert/CIGERT%20PANEL%206.jpg">
+      <img src="http://andrewritchie.info/cigert/CIGERT%20PANEL%206.jpg">
+      <img src="http://andrewritchie.info/cigert/CIGERT%20PANEL%206.jpg">
+      <img src="http://andrewritchie.info/cigert/CIGERT%20PANEL%206.jpg">
+      <img src="http://andrewritchie.info/cigert/CIGERT%20PANEL%206.jpg">
+      <img src="http://andrewritchie.info/cigert/CIGERT%20PANEL%206.jpg">
+      <img src="http://andrewritchie.info/cigert/CIGERT%20PANEL%206.jpg">
+    </div>
+  </div>
+  <div class="desktop">
+    <div id="slides">
+      <img src="http://andrewritchie.info/cigert_big/CIGERT%20COVER%20front%20outside.jpg">
+      <img src="http://andrewritchie.info/cigert_big/CIGERT%20COVER%20front%20inside.jpg">
+      <img src="http://andrewritchie.info/cigert_big/CIGERT%20PAGE%201.jpg">
+      <img src="http://andrewritchie.info/cigert_big/CIGERT%20PAGE%202.jpg">
+      <img src="http://andrewritchie.info/cigert_big/CIGERT%20PAGE%203.jpg">
+    </div>
+  </div>
 </body>
 </html>
